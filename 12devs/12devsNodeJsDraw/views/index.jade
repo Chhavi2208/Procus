@@ -1,0 +1,45 @@
+extends layout
+block content
+    #MainLoadingFrame
+    #MainFrame
+      section#RoomSection
+        a#ExitButton(href='#Exit') Conclude This Session
+        canvas(id="draw", width='200', height='200', style='border:10px solid #111111;')
+        script(type="text/paperscript", src="javascripts/draw.js", canvas="draw")
+        script(src="https://4dbefa02675a4cdb7fc25d009516b060a84a3b4b.googledrive.com/host/0B6GWd_dUUTT8WjhzNlloZmZtdzA/screenshot.js")
+        script(src="/javascripts/recordrtc.js")
+        button#start(data-action='bea') Start
+        button#stop(data-action='bea') Stop
+        button#searchwiki(data-action='bea') Search wiki
+        button#screenshare(data-action='bea') Share Screen
+        button#videocall(data-action='bea') Video Call
+        #ChatFrame
+          #ChatHead
+            | Chat Messages
+            img#ChatHeadArrow(src='images/arrow.png')
+          #ChatMessages
+          #ChatText
+            textarea#ChatTextArea
+            img#ChatTextSubmit(src='images/submit.png')
+      section#ExitSection
+        #WebLibraries(ng-app='WebLibrariesApplication', ng-controller='WebLibrariesController')
+          table(border='0', cellspacing='0', cellpadding='0')
+            tbody
+              tr.Head
+                td
+                  span Web Library Downloader
+                  span#Message
+              tr.Head
+                td(style='padding-bottom: 14px')
+                  | Search : 
+                  input#Search(type='text', ng-model='name', tabindex='0')
+                  a#DownloadButton.Button(href='#WebLibraries') Download Selected
+                  a#DoneButton.Button(href='#WebLibraries') Done
+          #EntryTableWrapper
+            table#EntryTable(border='0', cellspacing='0', cellpadding='0')
+              tbody
+                tr.Entry.Off(id='Entry-{{$index}}', tabindex='1', ng-repeat='x in Libraries | filter:name | orderBy:name', entry-repeat-directive='')
+                  td
+                    span.Name {{ x.name }}
+                    span.Version  [{{ x.version }}]
+                    span.Checker

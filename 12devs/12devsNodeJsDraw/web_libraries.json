@@ -1,0 +1,112 @@
+[
+    {
+        "name": "Angular JS",
+        "version": "1.4.7",
+        "link": "http://localhost/Libraries/angular.js"
+    },
+    {
+        "name": "jQuery",
+        "version": "2.1.4",
+        "link": "http://localhost/Libraries/jquery.js"
+    },
+    {
+        "name": "Pixi.js",
+        "version": "2.5.1",
+        "link": "http://localhost/Libraries/pixi.js"
+    },
+    {
+        "name": "Velocity JS",
+        "version": "1.2.2",
+        "link": "http://localhost/Libraries/velocity.js"
+    },
+    {
+        "name": "Paper.js",
+        "version": "1.2.2",
+        "link": "http://localhost/Libraries/paper.js"
+    },
+    {
+        "name": "Meteor.js",
+        "version": "1.2.2",
+        "link": "http://localhost/Libraries/Meteor.js"
+    },
+    {
+        "name": "D3.js",
+        "version": "1.2.2",
+        "link": "http://localhost/Libraries/D3.js"
+    },
+    {
+        "name": "3drender.js",
+        "version": "1.2.2",
+        "link": "http://localhost/Libraries/3drender.js"
+    },
+    {
+        "name": "Larvel",
+        "version": "1.2.2",
+        "link": "http://localhost/Libraries/larvel"
+    },
+    {
+        "name": "Node.js",
+        "version": "1.2.2",
+        "link": "http://localhost/Libraries/node.js"
+    },
+    {
+        "name": "ember.js",
+        "version": "1.2.2",
+        "link": "http://localhost/Libraries/ember.js"
+    },
+    {
+        "name": "Backbone JS",
+        "version": "1.2.2",
+        "link": "http://localhost/Libraries/backbone.js"
+    },
+    {
+        "name": "Express",
+        "version": "1.2.2",
+        "link": "http://localhost/Libraries/express"
+    },
+    {
+        "name": "passport",
+        "version": "1.2.2",
+        "link": "http://localhost/Libraries/passport"
+    },
+    {
+        "name": "Dojo",
+        "version": "1.2.2",
+        "link": "http://localhost/Libraries/dojo"
+    },
+    {
+        "name": "Mojokit",
+        "version": "1.2.2",
+        "link": "http://localhost/Libraries/mojokit"
+    },
+    {
+        "name": "Unified",
+        "version": "1.2.2",
+        "link": "http://localhost/Libraries/unified"
+    },
+    {
+        "name": "midori",
+        "version": "1.2.2",
+        "link": "http://localhost/Libraries/midori"
+    },
+    {
+        "name": "moo tools",
+        "version": "1.2.2",
+        "link": "http://localhost/Libraries/moo tools"
+    },
+    {
+        "name": "sprout core",
+        "version": "1.2.2",
+        "link": "http://localhost/Libraries/sproutcore"
+    },
+    {
+        "name": "chocolate.js",
+        "version": "1.2.2",
+        "link": "http://localhost/Libraries/chocolate.js"
+    },
+    {
+        "name": "cappuccino",
+        "version": "1.2.2",
+        "link": "http://localhost/Libraries/cappuccino"
+    }
+]

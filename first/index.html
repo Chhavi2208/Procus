@@ -1,0 +1,112 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <link rel="stylesheet" type="text/css" href="normalize.css">
+    <link rel="stylesheet" type="text/css" href="main.css">
+    <script type="text/javascript" src="jquery.js"></script>
+    <script type="text/javascript" src="TweenMax.js"></script>
+    <script type="text/javascript" src="jquery_mousewheel.js"></script>
+    <script type="text/javascript" src="ScrollPlugin.js"></script>
+    <script type="text/javascript" src="main.js"></script>
+    <script type="text/javascript" src="home.js"></script>
+	<script>
+	function fun(){
+	window.location.href='http://localhost:4000';
+	}
+	</script>
+</head>
+
+<body>
+<div id="MainLoadingFrame"></div>
+<div id="MainFrame">
+    <section id="HomeSection">
+        <object type="image/svg+xml" data="images/home.svg" width="100%" height="100%" id="HomeSVG"></object>
+    </section>
+    <section id="FormSection">
+	<form action="/data" method="POST">
+        <table class="Form" id="Form" border="0" cellpadding="0" cellspacing="0">
+            <tbody>
+            <tr>
+                <td colspan="3"><h1 class="Heading">Try Procus!</h1></td>
+            </tr>
+            <tr>
+                <td class="Register"><h1>Register</h1></td>
+                <td rowspan="5">
+                    <div class="Separator"></div>
+                </td>
+                <td class="Login"><h1>Login</h1></td>
+            </tr>
+            <tr>
+                <td class="Register">
+                    <input type="text" class="FullName Text" id="RegFullName" name="RegFullName" tabindex="1" spellcheck="false">
+                    <label for="RegFullName" class="FullName">Full Name</label>
+                </td>
+                <td class="Login">
+                    <input type="text" class="EmailID Text" id="LogEmailID" name="LogEmailID"tabindex="2" spellcheck="false">
+                    <label for="LogEmailID" class="EmailID">Email ID</label>
+                </td>
+            </tr>
+            <tr>
+                <td class="Register">
+                    <input type="text" class="EmailID Text" id="RegEmailID" name="RegEmailID" tabindex="1" spellcheck="false">
+                    <label for="RegEmailID" class="EmailID">Email ID</label>
+                </td>
+                <td class="Login">
+                    <input type="password" class="Password Text" id="LogPassword" name="LogPassword" tabindex="2">
+                    <label for="LogPassword" class="Password">Password</label>
+                </td>
+            </tr>
+            <tr>
+                <td class="Register">
+                    <input type="password" class="Password Text" id="RegPassword" name="RegPassword" tabindex="1">
+                    <label for="RegPassword" class="Password">Password</label>
+                </td>
+                <td class="Login">
+                    <input type="submit" class="SubmitButton Button" value="submit" name="submit"  id="LoginSubmit" tabindex="2">
+                </td>
+            </tr>
+            <tr>
+                <td class="Register">
+                    <input type="submit" class="SubmitButton Button" value="submit" name="submit" id="RegisterSubmit" tabindex="1">
+                </td>
+                <td class="Login"></td>
+            </tr>
+            <tr>
+                <td colspan="3"><h2 id="GoBackHome">Want to create or join a room?</h2></td>
+            </tr>
+            </tbody>
+        </table>
+		</form>
+    </section>
+    <section id="JoinRoom">
+        <table class="Form" id="JoinForm" border="0" cellpadding="0" cellspacing="0" style="width: 400px">
+            <tbody>
+            <tr>
+                <td><h1 class="Heading">Join Procus Room Now!</h1></td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="text" class="RoomID Text" id="RoomID" tabindex="3" spellcheck="false">
+                    <label for="RoomID">Room ID</label>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="text" class="RoomPasswordID Text" id="RoomPasswordID" tabindex="3" spellcheck="false">
+                    <label for="RoomPasswordID">NAME</label>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="submit" class="SubmitButton Button" value="submit" id="JoinSubmit" tabindex="3" onclick='fun()'></input>
+                </td>
+            </tr>
+            </tbody>
+        </table>
+		
+    </section>
+</div>
+</body>
+
+</html>

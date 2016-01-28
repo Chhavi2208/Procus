@@ -1,0 +1,36 @@
+doctype html
+html
+  head
+    title= title
+    link(rel='stylesheet', href='/stylesheets/style.css')
+    meta(charset='utf-8')
+    meta(http-equiv='X-UA-Compatible', content='IE=edge')
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+    meta(name='ct', content='<%= ct %>')
+    script(src="/socket.io/socket.io.js")
+    script(src="/javascripts/socket.js")
+    script(src="/javascripts/paper.js")
+    link(rel='stylesheet', type='text/css', href='/stylesheets/normalize.css')
+    link(rel='stylesheet', type='text/css', href='/stylesheets/main.css')
+    script(type='text/javascript', src='/javascripts/angular.js')
+    script(type='text/javascript', src='/javascripts/jquery.js')
+    script(type='text/javascript', src='/javascripts/TweenMax.js')
+    script(type='text/javascript', src='/javascripts/jquery_mousewheel.js')
+    script(type='text/javascript', src='/javascripts/ScrollPlugin.js')
+    script(type='text/javascript', src='/javascripts/main.js')
+    script(type='text/javascript', src='/javascripts/room.js')
+    script(type='text/javascript', src='/javascripts/web_libraries.js')
+    script(type='text/javascript', src='/chat.js')
+    script(type='text/javascript', src='/web_libraries.js')
+    link(href='css/watson-bootstrap-style.css', rel='stylesheet')
+    link(href='css/style.css', rel='stylesheet')
+    script.
+      function op(){
+      var abc=document.getElementById('resultsText').value;
+      window.open('https://en.wikipedia.org/wiki/'+abc);
+      }
+    script(src='https://code.jquery.com/jquery-1.11.3.min.js')
+    script(src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js')
+    script(src='js/index.js')
+  body
+    block content

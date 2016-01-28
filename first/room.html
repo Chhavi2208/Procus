@@ -1,0 +1,74 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <link rel="stylesheet" type="text/css" href="normalize.css">
+    <link rel="stylesheet" type="text/css" href="main.css">
+    <script type="text/javascript" src="angular.js"></script>
+    <script type="text/javascript" src="jquery.js"></script>
+    <script type="text/javascript" src="TweenMax.js"></script>
+    <script type="text/javascript" src="jquery_mousewheel.js"></script>
+    <script type="text/javascript" src="ScrollPlugin.js"></script>
+    <script type="text/javascript" src="main.js"></script>
+    <script type="text/javascript" src="room.js"></script>
+    <script type="text/javascript" src="web_libraries.js"></script>
+</head>
+
+<body>
+<div id="MainLoadingFrame"></div>
+<div id="MainFrame">
+    <section id="RoomSection">
+        <a id="ExitButton" href="#Exit">Conclude This Session</a>
+
+        <div id="ChatFrame">
+            <div id="ChatHead">
+                Chat Messages
+                <img id="ChatHeadArrow" src="images/arrow.png">
+            </div>
+            <div id="ChatMessages"></div>
+            <div id="ChatText">
+                <textarea id="ChatTextArea"></textarea>
+                <img id="ChatTextSubmit" src="images/submit.png">
+            </div>
+        </div>
+    </section>
+    <section id="ExitSection">
+        <div id="WebLibraries" ng-app="WebLibrariesApplication" ng-controller="WebLibrariesController">
+            <table border="0" cellspacing="0" cellpadding="0">
+                <tbody>
+                <tr class="Head">
+                    <td>
+                        <span>Web Library Downloader</span>
+                        <span id="Message"></span>
+                    </td>
+                </tr>
+                <tr class="Head">
+                    <td style="padding-bottom: 14px">
+                        Search : <input type="text" id="Search" ng-model="name" tabindex="0">
+                        <a href="#WebLibraries" class="Button" id="DownloadButton">Download Selected</a>
+                        <a href="#WebLibraries" class="Button" id="DoneButton">Done</a>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+            <div id="EntryTableWrapper">
+                <table id="EntryTable" border="0" cellspacing="0" cellpadding="0">
+                    <tbody>
+                    <tr id="Entry-{{$index}}" class="Entry Off" tabindex="1"
+                        ng-repeat="x in Libraries | filter:name | orderBy:name"
+                        entry-repeat-directive>
+                        <td>
+                            <span class="Name">{{ x.name }}</span>
+                            <span class="Version"> [{{ x.version }}]</span>
+                            <span class="Checker"></span>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+</div>
+</body>
+
+</html>
